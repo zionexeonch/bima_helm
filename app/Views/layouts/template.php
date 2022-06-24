@@ -7,10 +7,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="/bs/css/bootstrap.min.css">
     <link rel="stylesheet" href="/fas/css/all.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <?= $this->include('layouts/navbar')?>
     <?= $this->renderSection('content')?>
+    <?= $this->include('layouts/footer')?>
     <script src="/bs/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
