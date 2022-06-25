@@ -1,27 +1,9 @@
-<nav class="navbar sticky-top navbar-expand-sm bg-light">
-    <div class="container-fluid">
-        <div class="collapse navbar-collapse justify-content-center nav-coll" id="nav-coll">
-            <div class="navbar-brand d-sm-none">
-                BIMA HELM
-            </div>
-            <div class="navbar-nav ms-auto">
-                <a href="#" class="nav-link">Login</a>
-                <a href="#" class="nav-link">Sign Up</a>
-            </div>
-        </div>
-    </div>
-</nav>
-
-<nav class="navbar sticky-top navbar-expand bg-light">
-    <div class="container-fluid">
+<nav class="navbar navbar-expand bg-light">
+    <div class="container">
         <div class="navbar-brand d-none d-sm-block">
             BIMA HELM
         </div>
-        <button class="navbar-toggler d-sm-none" type="button" data-bs-toggle="collapse" 
-        data-bs-target=".nav-coll" aria-controls="nav-coll" aria-expanded="false">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-nav container-fluid">
+        <div class="navbar-nav container-fluid pe-0">
             <form class="d-flex flex-grow-1" role="search">
                 <div class="input-group">
                     <input type="search" class="form-control" name="search" id="search"
@@ -34,9 +16,51 @@
             <a href="#" class="nav-link">
                 <i class="fa-solid fa-cart-shopping"></i>
             </a>
-            <a href="#" class="nav-link d-sm-none">
+            <a href="#" class="nav-link">
                 <i class="fa-regular fa-user"></i>
             </a>
+        </div>
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand-sm bg-light">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#nav-offcanvas"
+        aria-controls="nav-offcanvas" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="nav-offcanvas"
+        aria-labelledby="nav-offcanvas-label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="nav-offcanvas-label">
+                    BIMA HELM
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="navbar-nav justify-content-start flex-grow-1">
+                    <a href="#" class="nav-link">Home</a>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="category-nav"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="category-nav">
+                            <li><a href="$" class="dropdown-item">
+                                Helm
+                            </a></li>
+                            <li><a href="$" class="dropdown-item">
+                                Jas Hujan
+                            </a></li>
+                            <li><a href="$" class="dropdown-item">
+                                Lainnya
+                            </a></li>
+                        </ul>
+                    </li>
+                    <a href="#" class="nav-link">About Us</a>
+                    <a href="#" class="nav-link">Contact Us</a>
+                </div>
+            </div>
         </div>
     </div>
 </nav>
